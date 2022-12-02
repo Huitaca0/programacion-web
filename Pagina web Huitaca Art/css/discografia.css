@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*style section header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #525252;
+    border: 1px solid #7F6000;
+    width: 100%;
+    height: 10vh;
+}
+.logo{
+    position: relative;
+    text-decoration: none;
+    width: 17%;
+    height: 78%;
+    color: #FFE699;
+    /*background-color: crimson;*/
+    text-align: center;  
+    font-size: 3.3rem; 
+    font-weight: bold;
+    font-family: 'Candal', sans-serif;
+}
+.nav-container{
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 1.2rem;
+    width: 35%;
+    height: 25%;
+    color: gold;
+    font-family: 'Cabin', sans-serif;
+    /*background-color: green;*/
+}
+.a-container{
+    text-decoration: none;
+    color: #FFD966;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    background-color: #AFABAB;
+    padding: 16px;
+    margin: 13px;
+    font-size: 19px; 
+}
+
+/*style section*/
+
+.section-first{
+    position: relative;
+    flex-wrap: wrap;
+    min-height: 90vh;
+    width: 100%;
+    background-color: #7E7563;
+    border: 1px solid #7F6000;
+
+}
+.titulo{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin: 0rem auto;
+    padding: 1.2rem;
+    font-size: 3.3rem;
+    color: #FFE699;
+}
+
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1400px;
+	margin: auto;
+    
+}
+
+.card{
+	width: 100%;
+	margin: 40px;
+    padding: 20px;
+	background:#7C7C7C;
+	border: 1px solid #7F6000;
+	transition: all 400ms ease-out;
+	cursor: default;
+    
+}
+.card:hover{
+	
+	transform: translateY(-3%);
+}
+.card img{
+	position: relative;
+    left: 20px;
+    top: 10px;
+	height: 250px;
+}
+.card .contenido-card{
+	padding: 25px;
+	
+}
+
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #F1E1BD;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.flecha{
+    position: absolute;
+    top: 800px;
+    right: 920px;
+}
+
+.texto-discografia{
+    position: absolute;
+    top: 750px;
+    right: 830px;
+    font-size: 20px;
+    width: 10%;
+    font-weight: bold;
+    
+}
+
+.link{
+    text-decoration: none;
+    color: #F1E1BD;
+}
+
+@media screen and (max-width: 1024px){
+    .container-card{
+        flex-direction: column;
+        width: 39%;
+	    max-width: 500px;
+    }
+    .card{
+        width: 100%;
+	    margin: 10px;
+        padding: 20px;
+    }
+
+    .logo{
+    left: 4%;
+    }
+    .nav-container{
+    position: absolute;
+    top: 120px;
+    left: 2%;
+    width: 100%;
+    flex-direction: row;
+    }
+    header{
+    height: 23vh;
+    }
+    .a-container{
+        background-color: transparent;
+    }
+    .flecha{
+    position: relative;
+    left: 200px;
+    top: 0px;
+    }
+    .texto-discografia{
+    width: 100%;
+    position: relative;
+    left: 38px;
+    top: 8px;
+    font-size: 18px;
+    }
+.titulo{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .container-card{
+        flex-direction: column;
+        width: 53%;
+	    max-width: 500px;
+    }
+    .card{
+        width: 100%;
+	    margin: 10px;
+        padding: 20px;
+    }
+
+.logo{
+    left: 4%;
+}
+.nav-container{
+    position: absolute;
+    top: 120px;
+    left: 1%;
+    width: 100%;
+    flex-direction: row;
+}
+header{
+    height: 23vh;
+}
+.a-container{
+    background-color: transparent;
+}
+.flecha{
+    position: relative;
+    left: 200px;
+  top: 0px;
+}
+.texto-discografia{
+    width: 100%;
+    position: relative;
+    left: 38px;
+  top: 8px;
+  font-size: 18px;
+}
+.titulo{
+    width: 100%;
+}
+
+@media screen and (max-width: 480px){
+    .container-card{
+        flex-direction: column;
+        width: 90%;
+	    max-width: 500px;
+	
+    }
+    .card{
+        width: 100%;
+	    margin: 10px;
+        padding: 20px;
+    }
+    .logo{
+        left: 5%;
+    }
+    .nav-container{
+        position: absolute;
+        top: 120px;
+        left: 1%;
+        width: 100%;
+        flex-direction: row;
+    }
+    header{
+        height: 23vh;
+    }
+    .a-container{
+        background-color: transparent;
+    }
+    .flecha{
+        position: relative;
+        left: 200px;
+      top: 0px;
+    }
+    .texto-discografia{
+        width: 100%;
+        position: relative;
+        left: 38px;
+      top: 8px;
+      font-size: 18px;
+    }
+    .titulo{
+        width: 100%;
+    }
+}
+}
+    
+}

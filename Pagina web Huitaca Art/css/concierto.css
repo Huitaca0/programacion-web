@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*style section header*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #525252;
+    border: 1px solid #7F6000;
+    width: 100%;
+    height: 10vh;
+}
+.logo{
+    position: relative;
+    text-decoration: none;
+    width: 17%;
+    height: 78%;
+    color: #FFE699;
+    /*background-color: crimson;*/
+    text-align: center;  
+    font-size: 3.3rem; 
+    font-weight: bold;
+    font-family: 'Candal', sans-serif;
+}
+.nav-container{
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 1.2rem;
+    width: 35%;
+    height: 25%;
+    color: gold;
+    font-family: 'Cabin', sans-serif;
+    /*background-color: green;*/
+}
+.a-container{
+    text-decoration: none;
+    color: #FFD966;
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    background-color: #AFABAB;
+    padding: 16px;
+    margin: 13px;
+    font-size: 19px; 
+}
+
+/*style section*/
+
+.section-first{
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #7E7563;
+    border: 1px solid #7F6000;
+}
+
+.titulo{
+    font-family: 'Rubik', sans-serif;
+    margin: 0rem auto;
+    padding: 1.2rem;
+    font-size: 3.3rem;
+    color: #FFE699;
+}
+
+.texto{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    margin: 21px;
+    color: #F1E1BD;
+    
+}
+
+.texto-comprar{
+    position: absolute;
+    font-family: 'PT Sans Narrow', sans-serif;
+    left: 580px;
+    top: 90px;
+    color: #BF9000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFF2CC;
+    border: 2px solid #BF9000;
+    padding: 13px;
+    margin: 27px;
+    width: 12%;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.linea{
+    position: relative;
+    top: -45px;
+    padding: 1.2rem;
+
+}
+
+.texto-comprar-two{
+    position: absolute;
+    font-family: 'PT Sans Narrow', sans-serif;
+    left: 580px;
+    top: 245px;
+    color: #BF9000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFF2CC;
+    border: 2px solid #BF9000;
+    padding: 13px;
+    margin: 27px;
+    width: 12%;
+    text-align: center;
+}
+
+.texto-comprar-three{
+    position: absolute;
+    font-family: 'PT Sans Narrow', sans-serif;
+    left: 580px;
+    top: 400px;
+    color: #BF9000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFF2CC;
+    border: 2px solid #BF9000;
+    padding: 13px;
+    margin: 27px;
+    width: 12%;
+    text-align: center;
+}
+
+.texto-comprar-four{
+    position: absolute;
+    font-family: 'PT Sans Narrow', sans-serif;
+    left: 580px;
+    top: 555px;
+    color: #BF9000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFF2CC;
+    border: 2px solid #BF9000;
+    padding: 13px;
+    margin: 27px;
+    width: 12%;
+    text-align: center;
+}
+
+.texto-comprar-five{
+    position: absolute;
+    font-family: 'PT Sans Narrow', sans-serif;
+    left: 580px;
+    top: 708px;
+    color: #BF9000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #FFF2CC;
+    border: 2px solid #BF9000;
+    padding: 13px;
+    margin: 27px;
+    width: 12%;
+    text-align: center;
+}
+
+.imagen-1{
+    position: absolute;
+    height: 250px;
+    left: 1000px;
+    top: 60px;
+}
+
+.imagen-2{
+    position: absolute;
+    height: 220px;
+    left: 1450px;
+    top: 360px;
+}
+
+.imagen-3{
+    position: absolute;
+    height: 200px;
+    left: 1000px;
+    top: 630px;
+}
+
+@media screen and (max-width: 1024px){
+    .imagen-1,
+    .imagen-2,
+    .imagen-3{
+        display: none;
+    }
+    .nav-container{
+        position: absolute;
+        top: 120px;
+        left: 1%;
+        width: 100%;
+        flex-direction: row;
+    }
+    header{
+        height: 23vh;
+    }
+    .a-container{
+        background-color: transparent;
+    }
+    .logo{
+        left: 3%;
+    }
+    .texto-comprar{
+        width: 20%;
+    }
+    .texto-comprar-two{
+        width: 20%;
+    }
+    .texto-comprar-three{
+        width: 20%;
+    }
+    .texto-comprar-four{
+        width: 20%;
+    }
+    .texto-comprar-five{
+        width: 20%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .imagen-1,
+    .imagen-2,
+    .imagen-3{
+        display: none;
+    }
+    .texto-comprar{
+        position: absolute;
+        width: 25%;
+        left: 500px;
+        top: 93px;
+    }
+    .texto-comprar-two{
+        position: absolute;
+        width: 25%;
+        left: 500px;
+        top: 245px;
+    }
+    .texto-comprar-three{
+        position: absolute;
+        width: 25%;
+        left: 500px;
+        top: 400px;
+    }
+    .texto-comprar-four{
+        position: absolute;
+        width: 25%;
+        left: 500px;
+        top: 555px;
+    }
+    .texto-comprar-five{
+        position: absolute;
+        width: 25%;
+        left: 500px;
+        top: 710px;
+    }
+    .linea{
+        width: 100%;
+    }
+    .nav-container{
+        position: absolute;
+        top: 120px;
+        left: 1%;
+        width: 100%;
+        flex-direction: row;
+    }
+    header{
+        height: 23vh;
+    }
+    .a-container{
+        background-color: transparent;
+    }
+    .logo{
+        left: 4%;
+    }
+
+@media screen and (max-width: 480px){
+    .imagen-1,
+    .imagen-2,
+    .imagen-3{
+        display: none;
+    }
+    .texto-comprar{
+        position: absolute;
+        width: 70%;
+        left: 30px;
+        top: 280px;
+    }
+    .texto-comprar-two{
+        position: absolute;
+        width: 70%;
+        left: 30px;
+        top: 470px;
+    }
+    .texto-comprar-three{
+        position: absolute;
+        width: 70%;
+        left: 30px;
+        top: 650px;
+    }
+    .texto-comprar-four{
+        position: absolute;
+        width: 70%;
+        left: 30px;
+        top: 810px;
+    }
+    .texto-comprar-five{
+        position: absolute;
+        width: 70%;
+        left: 30px;
+        top: 935px;
+    }
+    .linea{
+        width: 100%;
+    }
+    .nav-container{
+        position: absolute;
+        top: 120px;
+        left: 1%;
+        width: 100%;
+        flex-direction: row;
+    }
+    header{
+        height: 23vh;
+    }
+    .a-container{
+        background-color: transparent;
+    }
+    .logo{
+        left: 5%;
+    }
+
+}
+}
